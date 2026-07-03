@@ -1,0 +1,21 @@
+name: HTML CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check HTML Files
+        run: |
+          echo "Project Checked Successfully"
+
+      - name: List Files
+        run: ls -R
